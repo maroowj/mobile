@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset=euc-kr">
+        <title>Jquery Mobile UI 시작하기</title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="main">
+            <div data-role="header" data-theme="b">
+                <h1><a href="index.html" target="_self">Main 페이지</a></h1>
+            </div>
+            <div data-role="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem ad illum ab similique veritatis rerum, repudiandae, neque sit officiis praesentium facilis quis assumenda deserunt, quae tenetur fugit aperiam expedita!</p>
+                <ul data-role="listview">
+                    <li data-role="list-divider">내부 도메인</li>
+                    <li><a href="sub.html" target="_self">외부 Sub 페이지로 이동</a></li>
+                    <li><a href="#sub" data-rel="dialog">내부 Sub 페이지로 이동</a></li>
+                    <li data-role="list-divider">외부 도메인</li>
+                    <li><a href="https://google.com">Google로 이동</a></li>
+                </ul>
+            </div>
+            <div data-role="footer" data-theme="b">
+                <h2>인천일보 아카데미</h2>
+            </div>
+        </div>
+                <!----서브 페이지----->
+        <div data-role="page" id="sub">
+            <div data-role="header" data-theme="d">
+                <h1>Sub 페이지</h1>
+            </div>
+            <div data-role="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem ad illum ab similique veritatis rerum, repudiandae, neque sit officiis praesentium facilis quis assumenda deserunt, quae tenetur fugit aperiam expedita!</p>
+                <p><a href="#main">Main페이지로 이동</a></p>
+            </div>
+            <div data-role="footer" data-theme="d">
+                <h2>인천일보 아카데미</h2>
+            </div>
+        </div>       
+        
+    </body>
+</html>
